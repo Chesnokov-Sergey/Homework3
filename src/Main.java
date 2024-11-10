@@ -17,25 +17,25 @@ public class Main {
         }
         // Задание 2
         System.out.println("Задание 2");
-        int clientDeviceyear = 2015;
-        if (clientOS == 0 && clientDeviceyear < 2015) {
+        clientOS = 1;
+        int clientDeviceYear = 2015;
+        if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && clientDeviceyear >= 2015) {
-            System.out.println("Установите  обычную версию приложения для iOS по ссылке");
-        } else if (clientOS == 1 && clientDeviceyear < 2015) {
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите обычную версию приложения для iOS по ссылке");
+        } else if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else {
-            System.out.println("Установите  обычную версию приложения для Android по ссылке");
+            System.out.println("Установите обычную версию приложения для Android по ссылке");
         }
         // Задание 3
         System.out.println("Задание 3");
         int year = 2021;
-        if (year > 1584)
-            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-                System.out.println(year + " год является високосным");
-            } else {
-                System.out.println(year + " год не является високосным");
-            }
+        if (year > 1584 && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
         // Задание 4
         System.out.println("Задание 4");
         int deliveryDistance = 95;
@@ -54,47 +54,7 @@ public class Main {
         }
         // Задание 5
         System.out.println("Задание 5");
-        int monthNumber = 12;
-        switch (monthNumber) {
-            case 1:
-                System.out.println("1-й месяц он же Январь");
-                break;
-            case 2:
-                System.out.println("2-й месяц он же Февраль");
-                break;
-            case 3:
-                System.out.println("3-й месяц он же Март");
-                break;
-            case 4:
-                System.out.println("4-й месяц он же Апрель");
-                break;
-            case 5:
-                System.out.println("5-й месяц он же Май");
-                break;
-            case 6:
-                System.out.println("6-й месяц он же Июнь");
-                break;
-            case 7:
-                System.out.println("7-й месяц он же Июль");
-                break;
-            case 8:
-                System.out.println("8-й месяц он же Август");
-                break;
-            case 9:
-                System.out.println("9-й месяц он же Сентябрь");
-                break;
-            case 10:
-                System.out.println("10-й месяц он же Октябрь");
-                break;
-            case 11:
-                System.out.println("11-й месяц он же Ноябрь");
-                break;
-            case 12:
-                System.out.println("12-й месяц он же Декабрь");
-                break;
-            default:
-                System.out.println("Такого месяца не существует");
-        }
+        int monthNumber = 13;
         switch (monthNumber) {
             case 12:
             case 1:
@@ -117,7 +77,7 @@ public class Main {
                 System.out.println("принадлежит к сезону осень");
                 break;
             default:
-                System.out.println("Такого сезона не существует");
+                System.out.println("Такого месяца не существует");
         }
     }
 }
